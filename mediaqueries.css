@@ -1,0 +1,10 @@
+/* when the screen size is lower then 1200 pixels the desktop navigation will disappear */
+
+@media screen and (max-width: 1200px){
+    #desktop-nav{
+        display: none;
+    }
+    #hamburger-nav{
+        display: flex;
+    }
+}
