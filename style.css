@@ -119,6 +119,14 @@ a:hover {
 }
 
 
+.menu-links a:hover{
+    color: cornflowerblue;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: grey;   
+}
+
+
 
 .menu-links li{
     list-style: none;  
@@ -153,4 +161,11 @@ a:hover {
 
 .hamburger-icon span:first-child {
     transform: none;
+}
+
+
+#profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
