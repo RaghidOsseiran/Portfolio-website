@@ -344,3 +344,174 @@ section{
     width: 400px;
     margin: auto 0;
 }
+
+
+#experience{
+    position: relative;
+}
+
+.experience-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+  
+.experience-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+  
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+article {
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+  
+article .icon {
+    cursor: default;
+}
+
+
+
+.heading{
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+#projects {
+    position: relative;
+  }
+  
+  .color-container {
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
+  }
+  
+  .project-img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+  }
+  
+  .project-title {
+    margin: 1rem;
+    color: black;
+  }
+  
+  .project-btn {
+    color: black;
+    border-color: rgb(163, 163, 163);
+  }
+
+
+
+.contacts{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 300px;
+    height: 70vh;
+}
+
+.contact-info-upper-container{
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    background: (250,250,250);
+    background-color: black;
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts form{
+    max-width: 70rem;
+    margin:0 auto;
+}
+
+.contacts input {
+    background-color: rgb(85, 85, 85);
+    color: white;
+}
+
+.contacts textarea {
+    background-color: rgb(85, 85, 85);
+    color: white;
+}
+
+.contacts input::placeholder {
+    color: white;
+}
+
+.contacts textarea::placeholder {
+    color: white;
+}
+
+.contacts form .box{
+    width: 100%;
+    pad: 1.4rem;
+    font-size: 2rem;
+    text-transform: none;
+}
+
+.contacts form textarea{
+    height: 20rem;
+    resize: none;
+}
+
+div.flex > input {
+    margin-bottom: 10px;
+}
+
+
+.contacts form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contacts form .flex .box{
+    width: 49%;
+}
+
+.btnForm{
+    display: inline-block;
+    margin-top: 1rem;
+    cursor: pointer;
+    padding: 1rem 3rem;
+    background-color: var(--black);
+    border:var(--border-light);
+    color: var(--white);
+    font-size: 2rem;
+    transition: 100ms ease-in-out;
+    border-radius: 2rem;
+}
+
+
+.btnForm:hover{
+    cursor: pointer;
+    transition: 100ms ease-in-out;
+    background-color: var(--black);
+    background: cornflowerblue;
+    color: var(--white);
+}
