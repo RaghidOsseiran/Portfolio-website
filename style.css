@@ -246,6 +246,32 @@ section{
     gap: 2rem;
 }
 
+
+
+.message{
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    border: 1px solid #f5c6cb;
+    text-align: center;
+}
+
+.message button {
+    border: none;
+    background: none;
+    color: #721c24;
+    font-weight: bold;
+    float: right;
+    font-size: 20px;
+    line-height: 10px;
+    cursor: pointer;
+  }
+
 .btn {
     font-weight: 600;
     transition: all 300ms ease;
@@ -514,4 +540,33 @@ div.flex > input {
     background-color: var(--black);
     background: cornflowerblue;
     color: var(--white);
+}
+
+
+.credit{
+    text-align: center;
+    background-color: black;
+    padding: 3rem;
+    font-size: 2rem;
+    color: white;
+}
+
+
+.credit span{
+    color: yellow;
+}
+
+.contacts form .flex .box{
+    width: 100%;
+}
+
+.box-container-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-info{
+    text-align: center;
 }

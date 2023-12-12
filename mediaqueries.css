@@ -7,4 +7,8 @@
     #hamburger-nav{
         display: flex;
     }
+
+    .contacts form .flex .box{
+        width: 100%;
+    }
 }

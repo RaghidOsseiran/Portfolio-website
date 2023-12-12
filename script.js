@@ -5,3 +5,8 @@ function toggleMenu(){
     icon.classList.toggle("open");
     /* when clicked will add or remove the open class in that elements */
 }
+
+
+function closeMessage(element){
+    element.parentElement.style.display = 'none';
+}

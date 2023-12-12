@@ -1,3 +1,33 @@
+<?php 
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+$conn = mysqli_connect('localhost', 'root', '', 'contact_db') or die('connection failed');
+$statusMessage = [];
+
+if(isset($_POST['send'])){
+  $name = mysqli_real_escape_string($conn, $_POST['name']);
+  $email = mysqli_real_escape_string($conn, $_POST['email']);
+  $message = mysqli_real_escape_string($conn, $_POST['message']);
+
+  $select_message = mysqli_query($conn, "SELECT * FROM `contact_form` WHERE name='$name' AND email ='$email' AND message='$message'") or die('query failed');
+
+  if (mysqli_num_rows($select_message) > 0){
+    $statusMessage[] = 'message sent already!';
+  } else {
+    mysqli_query($conn, "INSERT INTO `contact_form`(name, email, message) VALUES ('$name', '$email', '$message')") or die('query failed');
+    $statusMessage[] = 'message sent successfully!';
+  }
+
+}
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +38,25 @@
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
+
+
+  <a id="top"></a>
+
+<?php 
+if(isset($statusMessage)){
+  foreach($statusMessage as $message){
+    echo '
+    <div class="message">
+      <span>'.$message.'</span>
+      <button onclick="closeMessage(this)">X</button>
+    </div>';
+  }
+}
+
+
+?>
+
+
     <nav id="desktop-nav">
         <div class="logo">Raghid Osseiran</div>
         <div>
@@ -289,7 +338,7 @@
 
         <h1 class="heading"><span style="color: black;">contact me</span></h1>
         <div class="contact-info-upper-container">
-          <form action="" method="POST">
+          <form action="" method="POST" id="Form-email">
               <div class="flex">
                   <input type="text" name="name" placeholder="enter your name" class="box"  class="input1" required>
                   <input type="email" name="email" placeholder="enter your email" class="box"  required>
@@ -301,7 +350,30 @@
     </section>
 
 
-    <div class="credit">credits</div>
+    <div class="box-container-form">
+
+      <div class="box-info">
+        <i class="fas fa-phone"></i>
+        <h3>Phone</h3>
+        <p>+33 0640423092</p>
+      </div>
+
+
+
+      <div class="box-info">
+        <i class="fas fa-envelope"></i>
+        <h3>Email</h3>
+        <p>Raghidosseiran04@gmail.com</p>
+      </div>
+
+      <div class="box-info">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Address</h3>
+        <p>France, Bordeaux, 33000</p>
+      </div>
+    </div>
+
+    <div class="credit"> &copy; copyright @ <?php echo date('Y'); ?> by <span>Raghid Osseiran</span></div>
     <script src="script.js"></script>
 </body>
 </html>
