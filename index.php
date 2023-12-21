@@ -67,13 +67,14 @@
         <h1 class="title">About Me</h1>
         <div class="section-container">
             <div class="section__pic-container">
-                <img src="./assets/blankpp.png" alt="About profile picture" class="about-pic">
+                <img src="./assets/aboutMe.png" alt="About profile picture" class="about-pic">
             </div>
             <div class="about-details-container">
                 <div class="about-containers">
                     <div class="details-container">
                         <img src="./assets/experience.png" alt="Experience icon" class="icon">
                         <h3>Experience</h3>
+                        <p>No proffesional experience yet (Looking to do my first internship this summer), but involved in many group projects</p>
                     </div>
                     <div class="details-container">
                         <img src="./assets/education.png" alt="Education icon" class="icon">
@@ -82,7 +83,7 @@
                     </div>
                 </div>
                 <div class="text-container">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores laudantium, sapiente laborum at accusantium recusandae mollitia sunt fugiat nulla, quidem praesentium eius reprehenderit. Aut tenetur sunt atque totam labore consequuntur quis id amet, nulla laboriosam quasi maxime quae temporibus vero, dolore doloremque nostrum culpa iste illum. Exercitationem atque molestiae quos.</p>
+                    <p>I discoverd programming about a year ago, and ever since then i have been finding myself passionate about things like doing full stack web projects, or just having fun in some languages like C, python, and many more. I am looking forward to continue on this journey and see what awaits me later on in life.</p>
                 </div>
             </div>
         </div>
@@ -138,15 +139,9 @@
                 />
                 <div>
                   <h3>TypeScript</h3>
-                  <p>Basic</p>
+                  <p>Intermediate</p>
                 </div>
               </article>
-
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
               <article>
                 <img
                   src="./assets/checkmark.png"
@@ -155,7 +150,7 @@
                 />
                 <div>
                   <h3>PostgreSQL</h3>
-                  <p>Basic</p>
+                  <p>Advanced</p>
                 </div>
               </article>
               <article>
@@ -188,9 +183,94 @@
                 />
                 <div>
                   <h3>Git</h3>
-                  <p>Intermediate</p>
+                  <p>Advanced</p>
                 </div>
               </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+
+
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">All around languages</h2>
+            <div class="article-container">
+            <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C#</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bash/Shell</h3>
+                  <p>Advanced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+
             </div>
           </div>
         </div>
@@ -212,9 +292,9 @@
         <div class="about-containers">
           <div class="details-container color-container">
             <div class="article-container">
-              <img src="./assets/blankpp.png" alt="Project 1" class="project-img"/>
+              <img src="./assets/Appologramme.png" alt="Project 1" class="project-img"/>
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title">Appologramme</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -233,12 +313,12 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/blankpp.png"
+                src="./assets/FileMania.png"
                 alt="Project 2"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="experience-sub-title project-title">FileMania</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -257,12 +337,14 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/blankpp.png"
+                src="./assets/FlappyAstro.png"
                 alt="Project 3"
                 class="project-img"
+                width= "100"
+                height= "50"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="experience-sub-title project-title">FlappyAstro</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
