@@ -298,7 +298,7 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/RaghidOsseiran/AppologrammeReal/tree/main'"
               >
                 Github
               </button>
@@ -322,7 +322,7 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/RaghidOsseiran/FileMania'"
               >
                 Github
               </button>
@@ -348,7 +348,7 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/RaghidOsseiran/FlappyAstro'"
               >
                 Github
               </button>
